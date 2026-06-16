@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  asi_agent:
+    build: .
+    container_name: asi_cloud_agent_runtime
+    restart: always
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - ./storage_data:/app/storage # Persists local agent memory state on the host machine
