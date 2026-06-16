@@ -1,14 +1,40 @@
 # 🤖 ASI Autonomous Cloud Agent Ecosystem
 
-[![GitHub License](https://img.shields.io/github/license/credkellar-boop/ASI-CLOUD-GENT?color=blue&style=for-the-badge)](LICENSE)
-[![Python Version](https://img.shields.io/badge/python-3.11+-purple?style=for-the-badge&logo=python)](https://www.python.org/)
-[![Framework](https://img.shields.io/badge/Framework-uAgents-orange?style=for-the-badge)](https://fetch.ai/)
-[![CI Status](https://img.shields.io/github/actions/workflow/status/credkellar-boop/ASI-CLOUD-GENT/ci.yml?branch=main&style=for-the-badge&logo=github-actions)](../../actions)
-[![Security](https://img.shields.io/badge/Security-Bandit%20Passed-brightgreen?style=for-the-badge&logo=shield)](../../actions)
 
 An enterprise-ready, autonomous cloud worker built atop the **Fetch.ai uagents framework** for the **Artificial Superintelligence (ASI) Alliance** network. This system delivers decentralized storage orchestration, secure local file partitioning, a rolling 90-day automatic data purging engine, and real-time management via WebSockets.
 
 ---
+
+## 🛠️ Tech Stack Matrix
+
+### 🏗️ Core Framework
+![Python 3.11+](https://img.shields.io/badge/Python_3.11+-3776AB?style=flat-square&logo=python&logoColor=white)
+![Fetch.ai uAgents](https://img.shields.io/badge/Fetch.ai_uAgents-1C1C1C?style=flat-square&logo=fetch.ai&logoColor=white)
+
+### 🔌 API & Control Plane
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Uvicorn](https://img.shields.io/badge/Uvicorn-499848?style=flat-square&logo=gunicorn&logoColor=white)
+![WebSockets](https://img.shields.io/badge/WebSockets_(ASGI)-010101?style=flat-square&logo=socket.io&logoColor=white)
+![Pydantic v2](https://img.shields.io/badge/Pydantic_v2-E92063?style=flat-square&logo=pydantic&logoColor=white)
+
+### 🔐 Data & Cryptography
+![Cryptography](https://img.shields.io/badge/Fernet_AES--256-D00000?style=flat-square&logo=letsencrypt&logoColor=white)
+![JSON](https://img.shields.io/badge/Local_JSON_Partitions-000000?style=flat-square&logo=json&logoColor=white)
+![SQLite3](https://img.shields.io/badge/SQLite3_Archive-003B57?style=flat-square&logo=sqlite&logoColor=white)
+
+### ⚙️ DevOps & Infrastructure
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Docker Compose](https://img.shields.io/badge/Docker_Compose-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+
+### 🧪 Testing & CI/CD
+![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
+![Pytest-Cov](https://img.shields.io/badge/Pytest--Cov-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
+![Bandit (SAST)](https://img.shields.io/badge/SAST-Bandit-FFC107?style=flat-square&logo=python&logoColor=black)
+![Pre-Commit](https://img.shields.io/badge/Pre--Commit-F8B424?style=flat-square&logo=pre-commit&logoColor=black)
+![Black](https://img.shields.io/badge/Code_Style-Black-000000?style=flat-square&logo=python&logoColor=white)
+
 
 ## 🛠️ Tech Stack Matrix
 
