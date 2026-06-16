@@ -1,0 +1,13 @@
+site_name: ASI Cloud Agent Documentation
+site_description: Enterprise-grade autonomous Fetch.ai agent with automated storage lifecycle management.
+theme:
+  name: material
+  palette:
+    primary: deep purple
+    accent: light blue
+
+nav:
+  - Home: index.md
+  - Architecture: architecture.md
+  - Security & Storage: security.md
+  - API Reference: api.md
