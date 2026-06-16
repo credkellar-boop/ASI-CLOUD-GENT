@@ -1,0 +1,32 @@
+name: Public Repo Security Audit
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  sast-scan:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+
+    - name: Install Linting and Security Tools
+      run: |
+        pip install bandit safety
+
+    - name: Run Bandit (Python Code Vulnerability Scanner)
+      run: |
+        # Scans your python source code layout for security holes
+        bandit -r agents/ utils/ protocols/ server/ -ll
+
+    - name: Verify Known Dependency Vulnerabilities
+      run: |
+        # Cross-checks requirements.txt against the global CVE vulnerability database
+        if [ -f requirements.txt ]; then safety check -r requirements.txt; fi
