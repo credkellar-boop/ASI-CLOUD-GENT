@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: asi-cloud-agent
+  labels:
+    app: asi-agent
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: asi-agent
+  template:
+    metadata:
+      labels:
+        app: asi-agent
+    spec:
+      containers:
+      - name: asi-agent-runtime
+        image: your-dockerhub-username/asi-cloud-agent:latest
+        ports:
+        - containerPort: 8000
+        envFrom:
+        - secretRef:
+            name: asi-agent-secrets
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
