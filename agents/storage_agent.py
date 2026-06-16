@@ -17,3 +17,12 @@ async def init_storage(ctx: Context):
         if not ctx.storage.get(bucket):
             ctx.storage.set(bucket, [])
     ctx.logger.info(f"Storage Node online at address: {storage_agent.address}")
+
+from protocols.storage_protocol import storage_proto
+import handlers.message_handlers
+import handlers.import_handlers
+import handlers.cleanup_handlers
+# Add this line to import the new compliance handlers
+import handlers.security_handlers
+
+storage_agent.include(storage_proto)
