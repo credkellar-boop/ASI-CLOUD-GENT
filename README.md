@@ -1,5 +1,7 @@
 # 🤖 ASI Autonomous Cloud Agent Ecosystem
-
+<p align="center">
+  <img src="IMG_3468.png" alt="Profile Image" width="400"/>
+</p>
 
 An enterprise-ready, autonomous cloud worker built atop the **Fetch.ai uagents framework** for the **Artificial Superintelligence (ASI) Alliance** network. This system delivers decentralized storage orchestration, secure local file partitioning, a rolling 90-day automatic data purging engine, and real-time management via WebSockets.
 
